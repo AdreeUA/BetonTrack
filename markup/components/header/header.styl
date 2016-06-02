@@ -1,0 +1,75 @@
+.header
+
+	&__content
+		min-height 650px
+		background #dbcccc url(__static__content/bg-header.jpg) no-repeat
+		background-size cover
+		text-align center
+		color #fff
+		padding-bottom 50px
+
+		+below(md)
+			min-height 700px
+			padding-bottom 20px
+
+		+below(sm)
+			min-height 580px
+
+		+below(xs)
+			min-height 400px
+
+	&__inner
+		position relative
+		padding-top 130px
+
+
+	&__title
+		font-size 80px
+		font-weight 700
+		text-transform uppercase
+		line-height 1.2
+		margin-bottom 87px
+
+		+below(sm)
+			font-size 65px
+			margin-bottom 60px
+
+		+below(xs)
+			font-size 30px
+
+		span
+			font-size 40px
+			font-weight 300
+			display block
+
+			+below(sm)
+				font-size 30px
+
+			+below(xs)
+				font-size 16px
+
+	&__subtitle
+		font-size 36px
+		font-weight 700
+		text-transform uppercase
+		margin 0 auto 79px
+		width 48%
+
+		+below(sm)
+			font-size 26px
+
+		+below(xs)
+			font-size 18px
+			width 100%
+			margin-bottom 30px
+
+	&__special
+		font-size 18px
+		font-weight 300
+		margin-bottom 16px
+
+		+below(sm)
+			font-size 15px
+
+	.btn
+		margin-bottom 20px

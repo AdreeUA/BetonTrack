@@ -1,0 +1,45 @@
+.logo
+	display block
+	position absolute
+	top 0
+	left 0
+	background $color-decor url(__static__content/bg-logo.png) no-repeat
+	background-size cover
+	background-position 50% 0
+	font-family 'Russo One'
+	font-size 32px
+	padding 28px 17px 17px
+	box-shadow 0 20px 9px -10px rgba(#000, .76)
+	color #000
+
+	&:hover
+		.logo__inner:before
+			bg($logo-hover)
+			top -13px
+			left -13px
+
+	+below(xs)
+		left 50%
+		transform translate(-50%)
+
+
+	&__inner
+		padding-left 62px
+		position relative
+
+		&:before
+			content ''
+			bg($logo)
+			display inline-block
+			position absolute
+			margin-right 10px
+			left 0
+			top -6px
+
+		&:after
+			content ''
+			position absolute
+			border-bottom 3px solid
+			width 100%
+			left 0
+			bottom 0

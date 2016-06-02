@@ -1,0 +1,47 @@
+.form
+	font-size 36px
+
+	&__title
+		font-size 1em
+		font-weight 500
+		text-transform uppercase
+
+		+below(xs)
+			font-size 0.694em
+
+	&__subtitle
+		font-size 0.667em
+		font-weight 300
+		margin-bottom 34px
+
+		+below(xs)
+			font-size 0.500em
+
+	&__input
+	&__area
+		display inline-block
+		vertical-align top
+		background #fff
+		border none
+		border-radius 30px
+		color #666
+		font-size 0.500em
+		font-weight 300
+		margin-bottom 10px
+		line-height 1
+		border 2px solid transparent
+
+		&.error
+			border 2px solid red
+
+	&__input
+		padding 14px 34px 15px
+
+	&__area
+		width 100%
+		padding 19px 29px
+		line-height 1.3
+		min-height 112px
+
+	&__btn
+		border none

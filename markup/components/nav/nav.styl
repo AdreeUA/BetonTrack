@@ -1,0 +1,107 @@
+.nav
+	padding 19px 0
+	background #000
+	color #fff
+	vertical-align middle
+
+	&__list
+		font-size 14px
+		transition all .25s
+
+		+below(sm)
+			position fixed
+			transform translateY(-100%)
+			z-index 5
+			left 0
+			top 0
+			right 0
+			bottom 0
+			font-size 20px
+
+		&_open
+			transform translateY(0)
+			padding-top 80px
+			background-color rgba(#000, .8)
+			// position fixed
+
+	&__burger
+		position fixed
+		top 10px
+		left 30px
+		z-index 7
+
+	&__contact
+		m-cf()
+		text-align center
+		position relative
+		z-index 6
+
+		+below(xs)
+			padding-left 60px
+
+	&__item
+		display inline-block
+		vertical-align middle
+		margin-right 18px
+		margin-left 18px
+
+		+below(md)
+			margin-right 9px
+			margin-left 9px
+
+		&:last-child
+			margin-right 0
+		&:first-child
+			margin-left 0
+
+		+below(sm)
+			display block
+			text-align center
+
+	&__link
+		display block
+		transition all .25s
+
+		&:hover
+			color $color-decor
+
+		+below(sm)
+			padding 15px
+
+	&__back-call
+	&__phone
+		float right
+
+	&__phone
+		margin-right 20px
+		font-size 20px
+		font-weight 500
+		text-transform uppercase
+
+		+below(md)
+			font-size 18px
+
+		+below(sm)
+			display inline-block
+			vertical-align top
+			float none
+
+		+below(xs)
+			float right
+			margin 0 0 0 20px
+
+		span
+			color $color-decor
+
+	&__back-call
+		font-size 12px
+		color $color-decor
+		border-bottom 1px dotted
+		padding-bottom 3px
+		margin-top 3px
+
+		&:hover
+			color #feb662
+
+		+below(xs)
+			display none

@@ -1,0 +1,88 @@
+.services
+	padding 59px 0px 36px
+
+	.title:before
+		background-color #efefef
+
+	&__list
+		font-size 0
+		width 90%
+		margin 0 auto
+
+	&__item
+		font-size 22px
+		display inline-block
+		vertical-align middle
+		width 50%
+		padding-right 85px
+		padding-left 115px
+		padding-top 23px
+		margin-bottom 38px
+		min-height 98px
+		position relative
+		font-weight 500
+		line-height 1.2
+
+		+below(md)
+			font-size 19px
+			padding-right 30px
+		+below(sm)
+			font-size 15px
+			padding-right 20px
+		+below(xs)
+			width 100%
+			padding-right 0
+			margin-bottom 15px
+
+		&:nth-child(even)
+			padding-left 118px
+			padding-right 0
+
+		&:before
+			content ''
+			position absolute
+			left 0
+			top 0
+			width 92px
+			height 92px
+			border-radius 50%
+			border 3px solid $color-decor
+
+		&:after
+			content ''
+			position absolute
+
+		&:nth-child(1):after
+			bg($icon-1)
+			left 28px
+			top 30px
+		&:nth-child(2):after
+			bg($icon-2)
+			left 22px
+			top 24px
+		&:nth-child(3):after
+			bg($icon-3)
+			left 22px
+			top 24px
+		&:nth-child(4):after
+			bg($icon-4)
+			left 24px
+			top 27px
+		&:nth-child(5):after
+			bg($icon-5)
+			left 31px
+			top 24px
+		&:nth-child(6):after
+			bg($icon-6)
+			left 27px
+			top 29px
+
+		span
+			font-size 20px
+			font-weight 300
+			display block
+
+			+below(md)
+				font-size 16px
+			+below(sm)
+				font-size 13px

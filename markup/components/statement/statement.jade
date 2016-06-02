@@ -1,0 +1,13 @@
+include ../btn/btn
+include ../form/form
+
+mixin statement(data)
+    +b.SECTION.statement&attributes(attributes)
+        .container
+            +form#statement-form.wow.fadeInLeft
+                +e.H2.title Оставьте заявку
+                +e.P.subtitle на подробный расчет стоимости
+                +e.INPUT.input(type="text" placeholder="Ваше имя" name="name" required)
+                +e.INPUT.input(type="text" placeholder="Ваш телефон" name="phone" required)
+                +btn.BUTTON.__btn Получить расчет
+                input(type="hidden" name="formData" value="Заявка на подробный отчет стоимости")

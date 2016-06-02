@@ -1,0 +1,16 @@
+mixin about(data)
+    +b.SECTION.about&attributes(attributes)#about
+        +e.list
+            .container
+                .row
+                    .col-md-4.col-sm-6
+                        +e.item_factory.wow.fadeInLeft бетонный завод <br>
+                            span в Челябинске
+                    .col-md-4.col-sm-6
+                        +e.item_year.wow.fadeInLeft Более 20 лет <br>
+                            span на рынке
+                    .col-md-4.col-sm-6.col-sm-push-3.col-md-push-0
+                        +e.item_truck.wow.fadeInLeft 1 000 000 м<sup>3</sup> <br>
+                            span 
+                                i бетона 
+                                | отгружено клиентам

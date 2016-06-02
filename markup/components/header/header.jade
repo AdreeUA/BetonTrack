@@ -1,0 +1,15 @@
+include ../nav/nav
+include ../logo/logo
+include ../btn/btn
+
+mixin header(data)
+    +b.HEADER.header&attributes(attributes)
+        +nav
+        +e.content
+            .container.header__inner
+                +logo.wow.fadeInLeft
+                +e.H1.title.wow.fadeInDown(data-wow-delay="1s")  доставка бетона 
+                    span по Челябинску и Челябинской области
+                +e.P.subtitle.wow.fadeInDown(data-wow-delay="1s")  Аренда Автобетононасоса и миксеров
+                +e.P.special.wow.fadeInDown(data-wow-delay="1s") Получите консультацию нашего специалиста прямо сейчас
+                +btn.__btn(href="#popup-consultation" data-wow-delay="1s").wow.fadeInLeft Заказать консультацию

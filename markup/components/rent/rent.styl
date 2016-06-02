@@ -1,0 +1,54 @@
+.rent
+	padding 77px 0 59px
+
+	sup
+		font-size 14px
+
+	&__image
+		img
+			width 100%
+
+
+	&__price
+		padding 29px 0 18px
+		font-size 22px
+		font-weight 500
+		line-height 1.1
+		box-shadow 0 2px 21px rgba(0, 0, 0, 0.1), 0 20px 9px -10px rgba(0,0,0,0.12)
+		text-align center
+
+		i
+			color $color-decor
+
+		span
+			font-size 0.818em
+			font-weight 300
+
+		+below(md)
+			font-size 18px
+		+below(sm)
+			margin-bottom 30px
+		+below(xs)
+			font-size 16px
+
+	&__price-item
+		padding-left 118px
+		margin-bottom 23px
+		position relative
+		text-align left
+
+		&:before
+			content ''
+			position absolute
+			left 31px
+			bg($check)
+
+		+below(md)
+			padding-left 100px
+			&:before
+				left 20px
+
+		+below(sm)
+			margin-left 30%
+		+below(xs)
+			margin-left 0

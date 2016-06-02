@@ -1,0 +1,18 @@
+include ../btn/btn
+
+mixin rent(data)
+    +b.SECTION.rent&attributes(attributes)#rent
+        .container
+            +title Аренда Автобетононасоса и миксеров
+                span Свой автопарк. Есть в наличии бетоносмесители по 6 м<sup>3</sup>, 8 м<sup>3</sup>, 12 м<sup>3</sup>
+            .row
+                .col-md-4
+                    +e.price.wow.fadeInLeft
+                        +e.LI.price-item Насос <i>24 м</i> <br> + <i>80 м</i> магистрали
+                        +e.LI.price-item Стоимость <br> <i>2500 руб. в час </i> <br> <span>не менее 4 часов работы</span>
+                        +e.LI.price-item Доставка за пределы г.Челябинска <br> <i>1км пути - 30 руб.</i>
+                        +btn(href="#popup-rent").__btn Арендовать
+
+                .col-md-8
+                    +e.image.wow.fadeInRight
+                        img(src="__static__img/content/kamaz.png")

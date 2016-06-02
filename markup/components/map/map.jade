@@ -1,0 +1,23 @@
+include ../form/form
+
+mixin map(data)
+    +b.SECTION.map&attributes(attributes)#map-section
+        .container
+            +form.__form#map-form.wow.fadeInLeft
+                +e.H2.title У вас Остались вопросы?
+                +e.P.subtitle задайте их нам, и мы ответим в течении 30 минут
+                +e.INPUT.input(type="text" placeholder="Ваше имя" name="name" required).map__input
+                +e.INPUT.input(type="text" placeholder="Ваш телефон" name="phone" required).map__input
+                +e.TEXTAREA.area(placeholder="Задайте вопрос" rows="3" name="message" required).map__area
+                +btn.BUTTON.__btn.map__btn Получить расчет
+                input(type="hidden" name="formData" value="Вопрос")
+        //- +e.label-wrap
+        //-     +e.label
+        //-         +e.P.address г. Челябинск, ул. Артиллерийская, д. 35
+        //-         +e.P.phone 
+        //-             span +7(351) 
+        //-             | 230-16-06  
+        //-         +e.P.phone 
+        //-             span +7(912) 
+        //-             | 795-76-97
+        +e.init#map

@@ -1,26 +1,11 @@
 {
-    "folders": [
-        {
-            "name": "data",
-            "files": [
-                {
-                    "name": "data.js",
-                    "content": "var data = {__componentName__: {}}"
-                }
-            ]
-        }
-    ],
-
     "files": [
         {
             "name": "__componentName__.__templateExtension__",
-            "content": "<div class=\"__componentName__\"></div>"
+            "content": "mixin __componentName__(data)\n\t+b.__componentName__&attributes(attributes)\n\t\t| __componentName__"
         }, {
             "name": "__componentName__.__cssExtension__",
-            "content": ".__componentName__ {}"
-        }, {
-            "name": "__componentName__.js",
-            "content": ""
+            "content": ".__componentName__\n\tdisplay block"
         }
     ]
 }
