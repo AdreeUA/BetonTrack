@@ -4674,6 +4674,29 @@ body {
 	background: rgba(0, 0, 0, .8);
 }
 
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ff7200;
+  min-width: 245px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 19px 10px;
+  text-align: center;
+  border-radius: 30px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.btn:hover {
+  background-color: #ff9c00;
+}
+@media only screen and (max-width: 768px) {
+  .btn {
+    min-width: auto;
+  }
+}
 .about {
   background-color: #efefef;
   padding-bottom: 32px;
@@ -4709,7 +4732,7 @@ body {
   width: 71px;
   height: 80px;
   background-position: -179px 0px;
-  background-image: url("../img/png-sprite/96dpi/sprite2rdq2gldi.png");
+  background-image: url("../img/png-sprite/96dpi/sprite.png");
   background-size: 296px 206px;
   background-repeat: no-repeat;
 }
@@ -4717,7 +4740,7 @@ body {
   width: 74px;
   height: 97px;
   background-position: 0px 0px;
-  background-image: url("../img/png-sprite/96dpi/sprite2rdq2gldi.png");
+  background-image: url("../img/png-sprite/96dpi/sprite.png");
   background-size: 296px 206px;
   background-repeat: no-repeat;
 }
@@ -4725,7 +4748,7 @@ body {
   width: 97px;
   height: 59px;
   background-position: -78px 0px;
-  background-image: url("../img/png-sprite/96dpi/sprite2rdq2gldi.png");
+  background-image: url("../img/png-sprite/96dpi/sprite.png");
   background-size: 296px 206px;
   background-repeat: no-repeat;
   left: 16px;
@@ -4752,29 +4775,6 @@ body {
 @media only screen and (max-width: 992px) {
   .about__item {
     margin-top: 30px;
-  }
-}
-.btn {
-  display: inline-block;
-  vertical-align: top;
-  background-color: #ff7200;
-  min-width: 245px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  padding: 19px 10px;
-  text-align: center;
-  border-radius: 30px;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-.btn:hover {
-  background-color: #ff9c00;
-}
-@media only screen and (max-width: 768px) {
-  .btn {
-    min-width: auto;
   }
 }
 .burger {
@@ -5033,7 +5033,7 @@ body {
   width: 73px;
   height: 47px;
   background-position: 0px -101px;
-  background-image: url("../img/png-sprite/96dpi/sprite2rdq2gldi.png");
+  background-image: url("../img/png-sprite/96dpi/sprite.png");
   background-size: 296px 206px;
   background-repeat: no-repeat;
   top: -13px;
@@ -5055,7 +5055,7 @@ body {
   width: 56px;
   height: 36px;
   background-position: -133px -101px;
-  background-image: url("../img/png-sprite/96dpi/sprite2rdq2gldi.png");
+  background-image: url("../img/png-sprite/96dpi/sprite.png");
   background-size: 296px 206px;
   background-repeat: no-repeat;
   display: inline-block;
@@ -5461,7 +5461,7 @@ body {
   width: 51px;
   height: 50px;
   background-position: -59px -152px;
-  background-image: url("../img/png-sprite/96dpi/sprite2rdq2gldi.png");
+  background-image: url("../img/png-sprite/96dpi/sprite.png");
   background-size: 296px 206px;
   background-repeat: no-repeat;
 }
@@ -5549,7 +5549,7 @@ body {
   width: 45px;
   height: 37px;
   background-position: -167px -152px;
-  background-image: url("../img/png-sprite/96dpi/sprite2rdq2gldi.png");
+  background-image: url("../img/png-sprite/96dpi/sprite.png");
   background-size: 296px 206px;
   background-repeat: no-repeat;
   left: 28px;
@@ -5559,7 +5559,7 @@ body {
   width: 49px;
   height: 49px;
   background-position: -114px -152px;
-  background-image: url("../img/png-sprite/96dpi/sprite2rdq2gldi.png");
+  background-image: url("../img/png-sprite/96dpi/sprite.png");
   background-size: 296px 206px;
   background-repeat: no-repeat;
   left: 22px;
@@ -5569,7 +5569,7 @@ body {
   width: 55px;
   height: 54px;
   background-position: 0px -152px;
-  background-image: url("../img/png-sprite/96dpi/sprite2rdq2gldi.png");
+  background-image: url("../img/png-sprite/96dpi/sprite.png");
   background-size: 296px 206px;
   background-repeat: no-repeat;
   left: 22px;
@@ -5579,7 +5579,7 @@ body {
   width: 52px;
   height: 39px;
   background-position: -77px -101px;
-  background-image: url("../img/png-sprite/96dpi/sprite2rdq2gldi.png");
+  background-image: url("../img/png-sprite/96dpi/sprite.png");
   background-size: 296px 206px;
   background-repeat: no-repeat;
   left: 24px;
@@ -5589,7 +5589,7 @@ body {
   width: 42px;
   height: 51px;
   background-position: -254px 0px;
-  background-image: url("../img/png-sprite/96dpi/sprite2rdq2gldi.png");
+  background-image: url("../img/png-sprite/96dpi/sprite.png");
   background-size: 296px 206px;
   background-repeat: no-repeat;
   left: 31px;
@@ -5599,7 +5599,7 @@ body {
   width: 41px;
   height: 37px;
   background-position: -254px -55px;
-  background-image: url("../img/png-sprite/96dpi/sprite2rdq2gldi.png");
+  background-image: url("../img/png-sprite/96dpi/sprite.png");
   background-size: 296px 206px;
   background-repeat: no-repeat;
   left: 27px;
