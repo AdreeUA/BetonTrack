@@ -1,6 +1,5 @@
 node_modules
 dev
-builds
 .DS_Store
 ._.DS_Store
 
@@ -8,6 +7,7 @@ builds
 .tmpPreproc
 
 .idea
+config.codekit
 npm-debug.log
 phantomjsdriver.log
 /nbproject/*
